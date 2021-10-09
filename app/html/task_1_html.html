@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="uk">
+   <head>
+      <meta charset="utf-8">
+      <title>HTML Basics</title>
+      <meta name="author" content="Anna-Kozhel">
+      <meta name="description" content="HTML">
+      <meta name="keywords" content="html,test example">
+      <style>
+         body {
+         background-color: rgb(209, 199, 186);
+         text-align: justify;
+         }
+         hr {
+         margin: 10px;
+         padding: 0px;
+         height: 4px;
+         border: none;
+         background:rgb(241, 236, 231);
+         }
+         p {
+         text-indent: 20px;
+         font-size: 16px;
+         color: rgb(104, 76, 54);
+         }
+         .numbered2{
+         counter-reset: columnCounter;
+         }
+         .numbered2>th+th, 
+         .numbered2>td+td {
+         counter-increment: columnCounter;
+         }
+         .numbered2>th::before, 
+         .numbered2>td::before {
+         content: counter(columnCounter);
+         }
+         .numbered2>th:first-child::before {
+         content: none;
+         }
+         .numbered2>tr>th {
+         counter-increment: columnCounter;
+         background-color: #eeebe3;
+         }
+         .numbered2>th::before, 
+         .numbered2>td::before,
+         .numbered2>tr>th::before {
+         content: counter(columnCounter);
+         }
+         .numbered2>th:first-child::before {
+         content: none;
+         }
+         table td {
+         border: 1px solid black;
+         }
+         .table2 {
+         border: 2px solid black;
+         border-spacing:2px; 
+         padding: 4px;
+         width: 90%;
+         margin: 0 auto 0 auto;
+         }
+         .table2 td {
+         background-color: #f1ede6;		   
+         }
+         .table2 th,
+         .table td {
+         border: 1px solid black; 
+         background-color: #c5ad81;
+         }
+         .table2 th:nth-child(4),
+         .table2 td:nth-child(4){
+         background-color: #c5ad81;
+         }
+         .button {
+         color: white;
+         height: 50px;
+         width: 250px;
+         border: none;
+         border-radius: 50px;
+         background: linear-gradient(90deg, #d8b15e, #361d00)
+         }
+         h1{
+        height: 70px; 
+        width: auto;
+        font-style: italic;
+        text-align: center;
+        color: rgb(56, 36, 0);
+        }
+        h2{
+        height: 45px;
+        width: auto;
+        font-family: Georgia;
+        color: rgb(80, 56, 36);
+        text-decoration: underline;
+        }
+        h3{
+        height: 30px;
+        width: auto;
+        font-style: italic;
+        color: rgb(138, 104, 72);
+        }
+        h4{
+        height: 25px;
+        width: auto;
+        font-style: italic;
+        color: rgb(138, 104, 72);
+        text-align: center;
+        }
+      </style>
+   </head>
+   <body>
+      <a name="startOfPage"></a>
+      <h1>The first one page</h1>
+      <h2>Here is some more information</h2>
+      <h3>Something there about markup</h3>
+      <h4>HTML Basics</h4>
+      <hr>
+      <p>Text to read...</p>
+      <p>...still text...</p>
+      <p>...here is nithing new for you...</p>
+      <p>...it wasn`t a joke...</p>
+      <hr style="margin-right: 100px;">
+      <p>Normal ones</p>
+      <p><i>Italic ones</i></p>
+      <p><b>Bold ones</b></p>
+      <p><u>Underlined ones</u></p>
+      <p><s>Crossed out ones</s></p>
+      <hr style="margin-right: 200px;">
+      <pre>
+        So let`s recognize that 
+      living without knowing 
+      mathematics is impossible 
+      nowadays.
+    </pre>
+      <hr style="margin-right: 300px;">
+      <address>79026, town Lviv, street Energetychna, 1</address>
+      <hr style="margin-right: 400px;">
+      <h3>A few other examples of using applied math or where you can work after graduate:</h3>
+      <ol>
+         <li><span>Specialist in data analysis</span></li>
+         <li><span>System administrator</span></li>
+         <li><span>Lecturer</span></li>
+         <li><span>Project management specialist</span></li>
+      </ol>
+      <hr style="margin-right: 500px;">
+      <h3>The main points we are going to consider:</h3>
+      <ul>
+         <li>Basic concept of specialization</li>
+         <li>Definition of Applied Mathematics</li>
+         <li>Why is mathematics so popular?</li>
+         <li>Why does everyone need it?</li>
+         <li>The evolution of mathematics throughout history in a few words</li>
+         <li>How mathematics has become informatics</li>
+         <li>A few other examples of using applied math or where you can work after graduate</li>
+         <li>Summarize</li>
+      </ul>
+      <hr style="margin-right: 600px;">
+      <h3>Many levels list:</h3>
+      <ol type="A">
+         <li>Me trying to understand what is going on</li>
+         <li>
+            Understanding that I uderstand literally nothing
+            <ul>
+               <li>Trying to fight with that</li>
+               <li>Believing that it could help itself</li>
+               <li>Accepting that nothing will change</li>
+            </ul>
+         </li>
+         <li>Stabborny sitting</li>
+         <li>Looking for batter idea</li>
+         <li>Giving all the things up and going for cup of tea</li>
+      <hr style="margin-right: 700px;">
+      </ol>
+      <a href="../index.html">Go on previous site...</a>
+      <hr style="margin-right: 800px;">
+      </table>
+      <h2>Table</h2>
+      <table class="table2">
+         <caption>Here should be something important</caption>
+         <thead>
+            <tr>
+               <th>№</th>
+               <th>Name</th>
+               <th>Kredits</th>
+               <th>Points</th>
+               <th>Marks</th>
+            </tr>
+            <tr class="numbered2">
+               <th></th>
+               <th></th>
+               <th></th>
+               <th></th>
+               <th></th>
+            </tr>
+         </thead>
+         <tbody class="numbered2">
+            <tr>
+               <th></th>
+               <td>Алгебра і геометрія</td>
+               <td>6</td>
+               <td>96</td>
+               <td>A</td>
+            </tr>
+            <tr>
+               <th></th>
+               <td>Алгоритми та програмування</td>
+               <td>4</td>
+               <td>91</td>
+               <td>A</td>
+            </tr>
+            <tr>
+               <th></th>
+               <td>Іноземна мова</td>
+               <td>2</td>
+               <td>90</td>
+               <td>A</td>
+            </tr>
+            <tr>
+               <th></th>
+               <td>Інформаційні технології електронного документообігу</td>
+               <td>4</td>
+               <td>100</td>
+               <td>A</td>
+            </tr>
+            <tr>
+               <th></th>
+               <td>Історія державності та культури України</td>
+               <td>3</td>
+               <td>94</td>
+               <td>A</td>
+            </tr>
+            <tr>
+               <th></th>
+               <td>Математичний аналіз</td>
+               <td>8</td>
+               <td>71</td>
+               <td>C</td>
+            </tr>
+         </tbody>
+      </table>
+      <hr style="margin-right: 900px;">
+      <form>
+         <label for="user_name">Data</label>
+         <input type="text" id="user_name" placeholder="Write right here" maxlength="15">
+         <br><br>
+         <label for="user_date">Date</label>
+         <input type="date" id="user_date">
+         <br><br>
+         <label for="user_time">Time</label>
+         <input type="time" id="user_time">
+         <br><br>
+         <label for="user_color">Colour</label>
+         <input type="color" id="user_color">
+         <br><br>
+         <label for="user_file">File</label>
+         <input type="file" id="user_file">
+         <br><br>
+         <label for="user_checkbox">Put tick or not</label>
+         <input type="checkbox" id="user_checkbox">
+         <br><br>
+         <label for="user_radio">Your sex</label>
+         <input type="radio" id="user_radio" name="gender" value="male">male
+         <input type="radio" id="user_radio" name="gender" value="female">female
+         <br><br>
+         <label for="user_select">Your age</label>
+         <select id="user_select">
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+         </select>
+         <br><br>
+         <textarea placeholder="Comment here" cols="25" rows="5"></textarea>
+         <hr style="margin-right: 1000px;padding: 1px;">
+         <hr style="margin-right: 1100px;padding: 2px;">
+         <hr style="margin-right: 1200px;padding: 3px;">
+         <hr style="margin-right: 1300px;padding: 4px;">
+         <hr style="margin-right: 1400px;padding: 5px;">
+         <input class="button" type="submit" value="Reboot page">
+      </form>
+   </body>
+</html>
