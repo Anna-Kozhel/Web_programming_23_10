@@ -19,6 +19,21 @@ ul.navbar-nav{
 
     margin-right: 40%;
 }
+.fa-angle-right{
+    float: right;
+}
+.sub-menu{
+    display: none;
+}
+.hover-me:hover .sub-menu{
+position: absolute;
+display: block;
+margin-top: -30px;
+margin-left: 158px;
+background-color: white;
+padding: 3px;
+border-radius: 0.175rem;
+}
 .btn {
     color: var(--color1);
     border-color: var(--color1);
@@ -31,7 +46,7 @@ ul.navbar-nav{
 }
 h2{
     color: var(--color1);
-    font-family: Snell Roundhand, cursive;
+    font-family: cursive;
     font-style: italic;
     font-size: 160%;
 }

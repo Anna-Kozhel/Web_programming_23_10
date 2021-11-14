@@ -27,7 +27,34 @@
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="task_2_html.html">Стилі</a></li>
-							<li><a class="dropdown-item" href="#">Замовлення</a></li>
+							<li class="hover-me">
+								<div class="dropdown">
+								<a class="dropdown-item dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  Дизайн для...
+								</a>
+								<ul class="dropdown-menu sub-menu" aria-labelledby="Вropdown">
+									<li><a class="dropdown-item" href="#">Тамбур</a></li>
+									<li><a class="dropdown-item" href="#">Хол</a></li>
+									<li><a class="dropdown-item" href="#">Коридор</a></li>
+									<li><a class="dropdown-item" href="#">Кухня</a></li>
+									<li><a class="dropdown-item" href="#">Комора</a></li>
+									<li><a class="dropdown-item" href="#">Їдальня</a></li>
+									<li><a class="dropdown-item" href="#">Вітальня</a></li>
+									<li><a class="dropdown-item" href="#">Кімната для гостей</a></li>
+									<li><a class="dropdown-item" href="#">Спальня</a></li>
+									<li><a class="dropdown-item" href="#">Гардеробна</a></li>
+									<li><a class="dropdown-item" href="#">Дитяча кімната</a></li>
+									<li><a class="dropdown-item" href="#">Кабінет</a></li>
+									<li><a class="dropdown-item" href="#">Майстерня</a></li>
+									<li><a class="dropdown-item" href="#">Гараж</a></li>
+									<li><a class="dropdown-item" href="#">Підвальне приміщення</a></li>
+									<li><a class="dropdown-item" href="#">Санвузол</a></li>
+									<li><a class="dropdown-item" href="#">Ванна</a></li>
+									<li><a class="dropdown-item" href="#">Лоджія</a></li>
+									<li><a class="dropdown-item" href="#">Горище</a></li>
+								</ul>
+							</div>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
@@ -53,9 +80,6 @@
 			</div>
 		</div>
 	</nav>
-
-
-   
    <div class="main">
       <form class="window">
          <div class="input-group-sm mb-3">
@@ -91,32 +115,34 @@
          </div>
 
          <div class="input-group-sm mb-3">
-            <span class="input-group-text" id="basic-addon1">
-               Стать
-               <select class="custom-select selection" id="inputGroupSelect01">
-               <option selected>Оберіть...</option>
-               <option value="1">Чоловік</option>
-               <option value="2">Жінка</option>
-            </select>
-            </span>
+            Приміщення для дизайну
+            <input class="form-check-input-group" type="checkbox" id="gridCheck1">
+               <lable сlass="form-check-label" for="gridCheck1">Тамбур</lable>
+               <lable сlass="form-check-label" for="gridCheck2">Лоджія</lable>
+               <option value="1">Хол</option>
+               <option value="1">Їдальня</option>
+               <option value="1">Кухня</option>
+               <option value="2">Коридор</option>
+               <option value="1">Дитяча кімната</option>
+               <option value="1">Горище</option>
+               <option value="1">Гардеробна</option>
+               <option value="1">Комора</option>
+               <option value="1">Спальня</option>
+               <option value="2">Вітальня</option>
+               <option value="1">Кімната для гостей</option>
+               <option value="1">Майстерня</option>
+               <option value="1">Кабінет</option>
+               <option value="2">Ванна</option>
+               <option value="1">Санвузол</option>
+               <option value="1">Підвальне приміщення</option>
+               <option value="1">Гараж</option>
+         </input>
           </div>
          <div class="input-group-sm mb-3">
             <span class="input-group-text" id="basic-addon1">
                Дата народження
                <input class="birth" type="date" id="user_date" placeholder="UserPc">
             </span>
-         </div>
-
-         <div class="row mb-3">
-           <div class="col-form-label col-sm-2 pt-0">Натисни</div>
-           <div class="col-sm-10">
-             <div class="form-check">
-               <input class="form-check-input" type="checkbox" id="gridCheck1">
-               <label class="form-check-label" for="gridCheck1">
-                 Щось
-               </label>
-             </div>
-           </div>
          </div>
 
          <div class="input-group mb-3">
