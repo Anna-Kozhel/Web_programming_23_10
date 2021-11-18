@@ -153,4 +153,6 @@ div.block{
     background-color: var(--color1);
     border-color: var(--color1);
 }
-
+.form-check .form-check-input {
+	float: right;
+}

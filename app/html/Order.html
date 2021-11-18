@@ -207,12 +207,78 @@
 			</div>
 			<div class="input-group mb-3">
 				<span class="input-group-text" id="basic-addon1" style="max-height: 2rem;">Кількість кімнат:</span>
-				<input type="number" class="form-control" placeholder="Number" id="number" style="max-height: 2rem;">
+				<input type="number" class="form-control" placeholder="Num" id="number" style="max-height: 2rem;">
 			</div>
 			<div class="input-group mb-3">
 				<span class="input-group-text" id="basic-addon1" style="max-height: 2rem;">Масштаб</span>
-				<input type="number" class="form-control" placeholder="Number" id="number" style="max-height: 2rem;">
+				<input type="number" class="form-control" placeholder="Num" id="number" style="max-height: 2rem;">
 				<span class="input-group-text" style="max-height: 2rem;">м²</span>
+			</div>
+			<div class="input-group mb-3">
+				<span class="input-group-text" id="basic-addon1" style="max-height: 2rem;">Стиль</span>
+				<select class="form-select" id="inputGroupSelect01" style="max-height: 2rem; padding: 1px 5px 1px;">
+					<option selected>Оберіть...</option>
+					<option value="1">Американський</option>
+					<option value="2">Aмпір</option>
+					<option value="3">Античний</option>
+					<option value="4">Арабський</option>
+					<option value="5">Aрт-деко</option>
+					<option value="6">Африканський</option>
+					<option value="7">Бароко</option>
+					<option value="8">Готика</option>
+					<option value="9">Еклектика</option>
+					<option value="10">Екостиль</option>
+					<option value="11">Італійський</option>
+					<option value="12">Кантрі</option>
+					<option value="13">Класика</option>
+					<option value="14">Конструктивізм</option>
+					<option value="15">Контемпорарі</option>
+					<option value="16">Лофт</option>
+					<option value="17">Максималізм</option>
+					<option value="18">Мексиканський</option>
+					<option value="19">Мінімалізм</option>
+					<option value="20">Модерн</option>
+					<option value="21">Неокласика</option>
+					<option value="22">Пін-ап</option>
+					<option value="23">Прованс</option>
+					<option value="24">Рустик</option>
+					<option value="25">Середземноморський</option>
+					<option value="26">Скандинавський</option>
+					<option value="27">Функціоналізм</option>
+					<option value="28">Хай-тек</option>
+					<option value="29">Шале</option>
+					<option value="30">Японський</option>
+				</select>
+			</div>
+			<div class="input-group-sm mb-3">
+				<span class="input-group-text" id="basic-addon1" style="max-height: 2rem;">Отрієнтовний бюджет</span>
+				<div class="block"><input type="range" id="range" min="10000" max="1000000" style="padding:0.15rem; width: 90%; margin-right: 5%; margin-left: 5%;"></div>
+			</div>
+			<div class="input-group-sm mb-3">
+				<span class="input-group-text">Хочете залишити побажання?</span>
+				<textarea class="form-control" aria-label="С текстовым полем"></textarea>
+			</div>
+			<div class="input-group-sm mb-3">
+					<div class="block form-check form-switch">Потрібна особиста зустріч з командою?
+						<input class="form-check-input" type="checkbox" id="Default">
+					</div>
+			</div>
+			<div class="input-group-sm mb-3">
+				<div class="block form-check form-switch">Дзвінок чи повідомлення про оформлення замовлення?
+					<input class="form-check-input" type="checkbox" id="Default">
+				</div>
+			</div>
+			<div class="input-group-sm mb-3">
+				<span class="input-group-text" id="basic-addon1">
+					Коли бажаєте зустрітись?
+					<input class="birth" type="date" id="user_date" placeholder="UserPc">
+				</span>
+			</div>
+			<div class="input-group-sm mb-3">
+				<span class="input-group-text" id="basic-addon1">
+					На котру годину?
+					<input class="time" type="time" id="user_date" placeholder="UserPc" style="margin-left: auto; margin-right: auto;width: 5rem;">
+				</span>
 			</div>
 
 			<div class="row mb-3">
@@ -220,19 +286,6 @@
 					<div class="col-sm-10">
 						<input type="password" class="form-control" id="inputPassword3">
 					</div>
-			</div>
-
-			<div class="input-group-sm mb-3">
-				<span class="input-group-text" id="basic-addon1">
-					Дата народження
-					<input class="birth" type="date" id="user_date" placeholder="UserPc">
-				</span>
-			</div>
-
-			<div class="input-group mb-3">
-				<span class="input-group-text">$</span>
-				<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-				<span class="input-group-text">.00</span>
 			</div>
 			<button type="submit" class="btn btn-dark">Sign in</button>
 		</form>
