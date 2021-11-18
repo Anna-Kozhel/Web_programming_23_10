@@ -139,3 +139,12 @@ tr{
     width: 80%;
     text-align: center;
 }
+div.block{
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    
+    font-size: .875rem;
+}
+label{
+display: inline-block;
+}
