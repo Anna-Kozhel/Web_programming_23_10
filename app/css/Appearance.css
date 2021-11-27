@@ -6,21 +6,16 @@
 	--color5:#201e1e;
 }
 body{
-	background-color:rgb(8, 8, 8);
+	background: url(../img/Lightbulb.jpg);
+	background-size: 100%; 
+	background-attachment: fixed;
 }
 .navbar{
-	background-color: #1d1b1b;
-}
-.navbar-brand{
-	font-family: Snell Roundhand, cursive;
-	font-style: italic;
+	background-color: #161515;
 }
 ul.navbar-nav{
 
-	margin-right: 40%;
-}
-.fa-angle-right{
-	float: right;
+	margin-right: 50%;
 }
 .sub-menu{
 	display: none;
@@ -51,6 +46,12 @@ h2{
 	font-family: cursive;
 	font-style: italic;
 	font-size: 160%;
+}
+h3{
+	color: rgb(236, 181, 78);
+	font-family: monospace;
+	font-style: inherit;
+	font-size: 130%;
 }
 p{
 	color: whitesmoke;
@@ -106,7 +107,7 @@ tr{
 	margin-left: 15%;
 	margin-right: 15%;
 	margin-bottom: 1%;
-	background-color: rgba(20, 16, 13, 0.835);
+	background-color: rgba(0, 0, 0, 0.747);
 	border-left: 2px solid white;
 	border-right: 2px solid white;
 	border-bottom: 2px solid white;
@@ -114,8 +115,20 @@ tr{
 	padding: 1.5%;
 	text-align: justify;
 }
+.main1{
+	position: relative;
+	width: 70%; 
+	height: auto; 
+	float: left;
+					background-color: rgba(0, 0, 0, 0.747);
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 1%;
+	padding: 1.5%;
+	text-align: justify;
+}
 .window{
-	background-color: rgba(20, 16, 13, 0.623);
+	background-color: rgba(0, 0, 0, 0.747);
 	border-left: 1px solid white;
 	border-right: 1px solid white;
 	border-bottom: 1px solid white;
@@ -155,4 +168,16 @@ div.block{
 }
 .form-check .form-check-input {
 	float: right;
+}
+
+
+
+.uk-width-large-1-7 {
+    width: 19%!important;
+}
+.uk-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
 }
