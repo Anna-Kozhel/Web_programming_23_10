@@ -61,6 +61,10 @@ ul{
 	color: var(--color2);
 	margin-right: 7%;
 }
+ol{
+	color: whitesmoke;
+	margin-right: 10%;
+}
 .carousel-indicators .active {
 	opacity: 1;
 }
