@@ -1,1 +1,0 @@
-var area1,sum,option;function read0(o){area1=o.value,console.log(area1)}function read1(o){console.log(area1),option=parseInt(o.id),console.log(option),sum=area1*option,console.log(sum)}function read2(o){console.log(o.id)}
