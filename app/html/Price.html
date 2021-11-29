@@ -29,10 +29,10 @@
 							<li><a class="dropdown-item" href="styles.html">Стилі</a></li>
 							<li class="hover-me">
 								<div class="dropdown">
-								<a class="dropdown-item dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="dropdown-item dropdown-toggle disabled" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="true">
 								  Дизайн для...
 								</a>
-								<ul class="dropdown-menu sub-menu" aria-labelledby="Вropdown">
+								<ul class="dropdown-menu" aria-labelledby="Вropdown"><!--class="sub-menu:-->
 									<li><a class="dropdown-item" href="#">Тамбура</a></li>
 									<li><a class="dropdown-item" href="#">Холу</a></li>
 									<li><a class="dropdown-item" href="#">Коридору</a></li>
@@ -80,6 +80,72 @@
 			</div>
 		</div>
 	</nav>
+	<div class="main1">
+		<h3>Розрахуйте приблизну вартість бажаної послуги</h3>
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1" style="max-height: 2rem;">Площа:</span>
+			<input type="number" class="form-control something" placeholder="Num" id="number" style="max-height: 2rem;" oninput="read0(this)">
+			<span class="input-group-text" style="max-height: 2rem;">м²</span>
+		</div>
+		<div class="input-group-sm mb-3">
+			<span class="input-group-text" id="basic-addon8">Планується дизайн:</span>
+			<div class="block">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="165" onclick="read1(this)">
+				<label class="form-check-label" for="flexRadioDefault1">Економ проект</label>
+				<br>
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="270" onclick="read1(this)">
+				<label class="form-check-label" for="flexRadioDefault1">Базовий проект</label>
+				<br>
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="430" onclick="read1(this)">
+				<label class="form-check-label" for="flexRadioDefault2">Розширений проект</label>
+				<br>
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="540" onclick="read1(this)">
+				<label class="form-check-label" for="flexRadioDefault2">VIP проект</label>
+			</div>
+		</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1" style="max-height: 2rem;">Стиль</span>
+			<select class="form-select" id="inputGroupSelect01" style="max-height: 2rem; padding: 1px 5px 1px;">
+				<option selected>Оберіть...</option>
+				<option value="1"><button id="111111" onclick="read2(this)">Американський</button></option>
+				<option value="2" onclick="read(this)">Aмпір</option>
+				<option value="3" onclick="read(this)">Античний</option>
+				<option value="4" onclick="read(this)">Арабський</option>
+				<option value="5" onclick="read(this)">Aрт-деко</option>
+				<option value="6" onclick="read(this)">Африканський</option>
+				<option value="7" onclick="read(this)">Бароко</option>
+				<option value="8" onclick="read(this)">Готика</option>
+				<option value="9" onclick="read(this)">Еклектика</option>
+				<option value="10" onclick="read(this)">Екостиль</option>
+				<option value="11" onclick="read(this)">Італійський</option>
+				<option value="12" onclick="read(this)">Кантрі</option>
+				<option value="13" onclick="read(this)">Класика</option>
+				<option value="14" onclick="read(this)">Конструктивізм</option>
+				<option value="15" onclick="read(this)">Контемпорарі</option>
+				<option value="16" onclick="read(this)">Лофт</option>
+				<option value="17" onclick="read(this)">Максималізм</option>
+				<option value="18" onclick="read(this)">Мексиканський</option>
+				<option value="19" onclick="read(this)">Мінімалізм</option>
+				<option value="20" onclick="read(this)">Модерн</option>
+				<option value="21" onclick="read(this)">Неокласика</option>
+				<option value="22" onclick="read(this)">Пін-ап</option>
+				<option value="23" onclick="read(this)">Прованс</option>
+				<option value="24" onclick="read(this)">Рустик</option>
+				<option value="25" onclick="read(this)">Середземноморський</option>
+				<option value="26" onclick="read(this)">Скандинавський</option>
+				<option value="27" onclick="read(this)">Функціоналізм</option>
+				<option value="28" onclick="read(this)">Хай-тек</option>
+				<option value="29" onclick="read(this)">Шале</option>
+				<option value="30" onclick="read(this)">Японський</option>
+			</select>
+		</div>
+		<div class="input-group-sm mb-1 price">
+			<span class="input-group-text" id="basic-addon1">
+				Приблизна собівартість:
+			</span>
+		</div>
+	</div>
+	<script src="../../app/js/price_script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>

@@ -173,6 +173,10 @@ div.block{
 .form-check .form-check-input {
 	float: right;
 }
+div.price{
+	padding-top:5%;
+	padding-bottom: 5%;
+}
 
 
 
