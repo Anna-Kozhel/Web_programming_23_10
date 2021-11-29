@@ -20,7 +20,6 @@ function read1(el){
     console.log(document.querySelector("#getDiv span[id]").innerHTML);
 }
 
-
 function read2(elem){ 
     console.log(elem);
 }
